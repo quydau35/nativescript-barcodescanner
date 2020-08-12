@@ -26,3 +26,6 @@ publish/src
 publish/package
 demo/report/report.html
 demo/report/stats.json
+*.swp
+*.swo
+*~
