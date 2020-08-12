@@ -5,20 +5,20 @@
 [![Downloads][downloads-image]][npm-url]
 [![Twitter Follow][twitter-image]][twitter-url]
 
-[build-status]:https://travis-ci.org/EddyVerbruggen/nativescript-barcodescanner.svg?branch=master
-[build-url]:https://travis-ci.org/EddyVerbruggen/nativescript-barcodescanner
+[build-status]:https://travis-ci.org/quydau35/nativescript-barcodescanner.svg?branch=master
+[build-url]:https://travis-ci.org/quydau35/nativescript-barcodescanner
 [npm-image]:http://img.shields.io/npm/v/nativescript-barcodescanner.svg
 [npm-url]:https://npmjs.org/package/nativescript-barcodescanner
 [downloads-image]:http://img.shields.io/npm/dm/nativescript-barcodescanner.svg
 [twitter-image]:https://img.shields.io/twitter/follow/eddyverbruggen.svg?style=social&label=Follow%20me
-[twitter-url]:https://twitter.com/eddyverbruggen
+[twitter-url]:https://twitter.com/quydau35
 
 ## Want a quick demo?
 
 > Note that running this only makes sense on a real device.
 
 ```bash
-git clone https://github.com/EddyVerbruggen/nativescript-barcodescanner barcodedemo
+git clone https://github.com/quydau35/nativescript-barcodescanner barcodedemo
 cd barcodedemo/src
 ```
 
@@ -62,7 +62,7 @@ npm run demo-ng.ios (or demo.ios.device)
 ### A note about `UPC_A` and `EAN_13`
 When either (or both) of these are specified, both can be returned.
 You can check the actual type by inspecting the `format` property of the result object.
-For details, see [#176](https://github.com/EddyVerbruggen/nativescript-barcodescanner/issues/176).
+For details, see [#176](https://github.com/quydau35/nativescript-barcodescanner/issues/176).
 
 ## Installation
 From the command prompt go to your app's root folder and execute:
@@ -77,7 +77,7 @@ tns plugin add nativescript-barcodescanner
 <img src="docs/ios_embedded_scanner.png" width="281px"/>
 
 As you can see, you can style the view any way you like, and even overlay it with an image or button.
-To recreate the layout above, look at [these lines in the demo app](https://github.com/EddyVerbruggen/nativescript-barcodescanner/blob/23395bec3e5a26622146daea96dd6407a8413f70/demo/app/main-page.xml#L17-L31).
+To recreate the layout above, look at [these lines in the demo app](https://github.com/quydau35/nativescript-barcodescanner/blob/23395bec3e5a26622146daea96dd6407a8413f70/demo/app/main-page.xml#L17-L31).
 
 > 💡 TIP: If you don't destroy the component/page which embed the scanner (but instead show a modal, or navigate "forward") you can "pause" the scanner (since plugin version 3.4.0). Simply set that `pause` property to `true` when applicable.
  
@@ -206,7 +206,7 @@ Tip: during a scan you can use the volume up/down buttons to toggle the torch.
   );
 ```
 
-> Note that `result.format` above is one of [these](https://github.com/EddyVerbruggen/nativescript-barcodescanner/blob/241411a14f89171309bb94f3ca6da3bb45433e5e/src/barcodescanner-common.ts#L5).
+> Note that `result.format` above is one of [these](https://github.com/quydau35/nativescript-barcodescanner/blob/241411a14f89171309bb94f3ca6da3bb45433e5e/src/barcodescanner-common.ts#L5).
 
 #### JavaScript
 ```js
@@ -388,4 +388,4 @@ Custom Framework to access iOS APIs: https://github.com/EddyVerbruggen/ios-frame
 
 ZXing: https://github.com/zxing/zxing/releases
 
-As using that library as a direct dependency was not practical, there is a library-project that adopts the sources from ZXing and copiles them into a AAR for usage on android: https://github.com/EddyVerbruggen/barcodescanner-lib-aar/
+As using that library as a direct dependency was not practical, there is a library-project that adopts the sources from ZXing and copiles them into a AAR for usage on android: https://github.com/quydau35/barcodescanner-lib-aar/
