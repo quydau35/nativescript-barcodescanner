@@ -9,3 +9,11 @@ docs*
 *~
 *.swp
 *.swo
+publish
+src
+tslint.json
+docs
+demo
+demo-ng
+demo-vue
+
