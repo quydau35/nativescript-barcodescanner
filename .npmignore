@@ -1,0 +1,11 @@
+# demo files & folder
+demo*
+docs*
+
+# Travis.CI
+.travis.yml
+.gitignore
+# VIM buffer
+*~
+*.swp
+*.swo

@@ -7,10 +7,10 @@
 
 [build-status]:https://travis-ci.org/quydau35/nativescript-barcodescanner.svg?branch=master
 [build-url]:https://travis-ci.org/quydau35/nativescript-barcodescanner
-[npm-image]:http://img.shields.io/npm/v/nativescript-barcodescanner.svg
-[npm-url]:https://npmjs.org/package/nativescript-barcodescanner
-[downloads-image]:http://img.shields.io/npm/dm/nativescript-barcodescanner.svg
-[twitter-image]:https://img.shields.io/twitter/follow/eddyverbruggen.svg?style=social&label=Follow%20me
+[npm-image]:http://img.shields.io/npm/v/@la-corp/la-barcodescanner-lib-aar.svg
+[npm-url]:https://npmjs.org/package/@la-corp/la-barcodescanner-lib-aar
+[downloads-image]:http://img.shields.io/npm/dm/@la-corp/la-barcodescanner-lib-aar.svg
+[twitter-image]:https://img.shields.io/twitter/follow/quydau35.svg?style=social&label=Follow%20me
 [twitter-url]:https://twitter.com/quydau35
 
 ## Want a quick demo?
@@ -67,7 +67,7 @@ For details, see [#176](https://github.com/quydau35/nativescript-barcodescanner/
 ## Installation
 From the command prompt go to your app's root folder and execute:
 ```
-tns plugin add nativescript-barcodescanner
+tns plugin add @la-corp/la-barcodescanner-lib-aar
 ```
 
 ## Embedding the scanner (iOS)
@@ -83,7 +83,7 @@ To recreate the layout above, look at [these lines in the demo app](https://gith
  
 ### XML
 ```xml
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:Barcode="nativescript-barcodescanner">
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:Barcode="@la-corp/la-barcodescanner-lib-aar">
 ```
 
 Here's an example tag, showing all currently supported options. The property defaults are equal to the `scan` function.
@@ -106,7 +106,7 @@ Component / Module:
 
 ```typescript
 import { registerElement } from "nativescript-angular/element-registry";
-registerElement("BarcodeScanner", () => require("nativescript-barcodescanner").BarcodeScannerView);
+registerElement("BarcodeScanner", () => require("@la-corp/la-barcodescanner-lib-aar").BarcodeScannerView);
 ```
 
 View:
@@ -129,7 +129,7 @@ See 'demo-ng' for details. Do not run it for Android, because embedding a view i
 main.ts:
 
 ```typescript
-Vue.registerElement('BarcodeScanner', () => require('nativescript-barcodescanner').BarcodeScannerView)
+Vue.registerElement('BarcodeScanner', () => require('@la-corp/la-barcodescanner-lib-aar').BarcodeScannerView)
 ```
 
 View:
@@ -174,7 +174,7 @@ Tip: during a scan you can use the volume up/down buttons to toggle the torch.
 #### TypeScript
 
 ```typescript
-  import { BarcodeScanner } from "nativescript-barcodescanner";
+  import { BarcodeScanner } from "@la-corp/la-barcodescanner-lib-aar";
   let barcodescanner = new BarcodeScanner();
 
   barcodescanner.scan({
@@ -210,7 +210,7 @@ Tip: during a scan you can use the volume up/down buttons to toggle the torch.
 
 #### JavaScript
 ```js
-  var BarcodeScanner = require("nativescript-barcodescanner").BarcodeScanner;
+  var BarcodeScanner = require("@la-corp/la-barcodescanner-lib-aar").BarcodeScanner;
   var barcodescanner = new BarcodeScanner();
 
   barcodescanner.scan({
@@ -280,7 +280,7 @@ on Android we actually check for a camera to be available.
 
 #### JavaScript
 ```js
-  var barcodescanner = require("nativescript-barcodescanner");
+  var barcodescanner = require("@la-corp/la-barcodescanner-lib-aar");
 
   barcodescanner.available().then(
       function(avail) {
@@ -326,7 +326,7 @@ So instead of:
 ```typescript
 // my-component.ts
 import { Component, Inject } from '@angular/core';
-import { BarcodeScanner } from 'nativescript-barcodescanner';
+import { BarcodeScanner } from '@la-corp/la-barcodescanner-lib-aar';
 
 @Component({ ... })
   export class MyComponent {
@@ -345,7 +345,7 @@ Simply do:
 ```typescript
 // my-component.ts
 import { Component, Inject } from '@angular/core';
-import { BarcodeScanner } from 'nativescript-barcodescanner';
+import { BarcodeScanner } from '@la-corp/la-barcodescanner-lib-aar';
 
 @Component({ ... })
   //use the barcodescanner wherever you need it. See general usage above.
@@ -359,7 +359,7 @@ import { BarcodeScanner } from 'nativescript-barcodescanner';
 If you run into an error when Webpacking, open `app.module.ts` and add this:
 
 ```typescript
-import { BarcodeScanner } from "nativescript-barcodescanner";
+import { BarcodeScanner } from "@la-corp/la-barcodescanner-lib-aar";
 
 export function createBarcodeScanner() {
   return new BarcodeScanner();
