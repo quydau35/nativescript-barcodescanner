@@ -6,7 +6,7 @@
 [![Twitter Follow][twitter-image]][twitter-url]
 
 [build-status]:https://travis-ci.org/quydau35/nativescript-barcodescanner.svg?branch=master
-[build-url]:https://travis-ci.org/quydau35/nativescript-barcodescanner
+[build-url]:https://travis-ci.org/quydau35/nativescript-barcodescanner.svg?branch=master
 [npm-image]:http://img.shields.io/npm/v/@la-corp/la-barcodescanner-lib-aar.svg
 [npm-url]:https://npmjs.org/package/@la-corp/la-barcodescanner-lib-aar
 [downloads-image]:http://img.shields.io/npm/dm/@la-corp/la-barcodescanner-lib-aar.svg
