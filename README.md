@@ -13,6 +13,9 @@
 [twitter-image]:https://img.shields.io/twitter/follow/quydau35.svg?style=social&label=Follow%20me
 [twitter-url]:https://twitter.com/quydau35
 
+## Update note:
+This repo forked from [ https://github.com/EddyVerbruggen/nativescript-barcodescanner ][ https://github.com/EddyVerbruggen/nativescript-barcodescanner ] and update core module equivalent to Barcode Scanner app 4.7.8 latest release on February 25, 2019.
+
 ## Want a quick demo?
 
 > Note that running this only makes sense on a real device.
