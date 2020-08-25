@@ -13,7 +13,19 @@ publish
 src
 tslint.json
 docs
-demo
-demo-ng
-demo-vue
+seed-tests/seed-copy/**/*.*
+seed-tests/seed-copy-new-git-repo/**/*.*
+!demo/karma.conf.js
+!demo/app/tests/*.js
+demo/*.d.ts
+demo-ng/*.d.ts
+!demo/references.d.ts
+!demo-ng/references.d.ts
+demo/platforms
+demo-ng/platforms
+node_modules
+publish/src
+publish/package
+demo/report/report.html
+demo/report/stats.json
 
