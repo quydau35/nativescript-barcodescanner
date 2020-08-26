@@ -1,6 +1,6 @@
 {
   "name": "@la-corp/la-barcodescanner-lib-aar",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "fork from barcodescanner-lib-aar from EddyVerbruggen",
   "main": "barcodescanner",
   "directories": {

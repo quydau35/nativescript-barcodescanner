@@ -14,7 +14,7 @@
 [twitter-url]:https://twitter.com/quydau35
 
 ## Update note:
-This repo forked from https://github.com/EddyVerbruggen/nativescript-barcodescanner and update core module equivalent to Barcode Scanner app 4.7.8 latest release on February 25, 2019.
+This repo forked from [ https://github.com/EddyVerbruggen/nativescript-barcodescanner ] and update core module equivalent to Barcode Scanner app 4.7.8 latest release on February 25, 2019 which support Android SDK API level earlier than 22.
 
 ## Want a quick demo?
 
